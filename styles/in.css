@@ -3,4 +3,9 @@
 @tailwind utilities;
 
 .flex_filler {
+    flex: 2;
+}
+
+.flex_item {
+    @apply flex text-center flex-1 border-white border-2 h-14 justify-center items-center;
 }
