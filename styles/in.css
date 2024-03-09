@@ -10,18 +10,35 @@
     @apply flex text-center flex-1 border-white border-2 h-14 justify-center items-center;
 }
 
-.title_item {
-    @apply w-fit;
-}
 
 h1 {
     @apply text-white text-[16ch] md:text-[26ch] font-bold text-center mb-4;
 }
 p {
-    @apply text-white text-xl font-light 
+    @apply text-white text-2xl font-light 
 }
 
 .underlined_h1::after {
     content: "";
     @apply bg-white h-0.5 w-80 mt-0.5 mb-0.5 ml-auto mr-auto block;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.animation_swing {
+    animation-name: swing;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
