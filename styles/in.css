@@ -42,3 +42,10 @@ p {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
+
+.title-bg {
+    background-image: url("../images/thumbnail.png");
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+}
