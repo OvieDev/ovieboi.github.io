@@ -7,7 +7,7 @@
 }
 
 .flex_item {
-    @apply flex text-center flex-1 border-white border-2 h-14 justify-center items-center;
+    @apply flex text-center flex-1 border-white border-2 h-14 justify-center items-center transition ease-in-out bg-transparent text-white hover:bg-white hover:text-black;
 }
 
 
@@ -38,7 +38,7 @@ p {
 .animation_swing {
     animation-name: swing;
     animation-timing-function: ease-in-out;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -48,4 +48,24 @@ p {
     background-position: center;
     background-size: cover;
     height: fit-content;
+}
+
+@keyframes scroll_opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation_scrollop {
+    animation-name: scroll_opacity;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
