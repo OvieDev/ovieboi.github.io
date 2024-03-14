@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovie - personal site</title>
+    <meta name="description" content="Ovie - a hobbyist gamedev and an artist. This is my portfolio, if you">
+    <title>Ovie - Portfolio</title>
     <link rel="stylesheet" href="styles/out.css" type="text/css" />
+    <script defer src="scripts/scroll_detection.js"></script>
 </head>
-<body class="bg-gray-800">
+<body class="bg-gray-800" onscroll="onScroll()">
     <div class="title-bg">
         <div class="flex flex-row justify-center items-center gap-4 h-fit text-white pt-2 font-mono">
             <div class="flex_filler">
@@ -37,7 +39,7 @@
                 <img src="images/logo.png" class="animation_swing h-3/4 lg:h-1/2 w-[90%] lg:w-auto" />
                 <p class="w-fit ">Hobbyist Gamedev & Artist</p>
                 <div class="h-full w-full"></div>
-                <p class="w-fit text-5xl mb-10 animation_scrollop">↓ ↓ ↓</p>
+                <p class="w-fit text-5xl mb-10 animation_scrollop" id="scroll_indicator">↓ ↓ ↓</p>
             </div>
         </div>
     </div>
