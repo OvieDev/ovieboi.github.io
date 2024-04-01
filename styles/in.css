@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --shadow_color: rgb(43 58 72);
+}
+
 .flex_filler {
     flex: 2;
 }
@@ -48,6 +52,9 @@ p {
     background-position: center;
     background-size: cover;
     height: fit-content;
+    -webkit-box-shadow: 0px 10px 52px 13px var(--shadow_color);
+    -moz-box-shadow: 0px 10px 52px 13px var(--shadow_color);
+    box-shadow: 0px 10px 52px 13px var(--shadow_color);
 }
 
 @keyframes scroll_opacity {
