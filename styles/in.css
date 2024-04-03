@@ -4,6 +4,20 @@
 
 :root {
     --shadow_color: rgb(43 58 72);
+    --widget_shadow: rgb(49 70 84);
+}
+
+a {
+    @apply w-max
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .flex_filler {
@@ -89,4 +103,10 @@ p {
     animation-timing-function: ease-in-out;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.widget-shadow {
+    -webkit-box-shadow: 0px 0px 44px 0px var(--widget_shadow);
+    -moz-box-shadow: 0px 0px 44px 0px var(--widget_shadow);
+    box-shadow: 0px 0px 44px 0px var(--widget_shadow);
 }

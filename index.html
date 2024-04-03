@@ -8,27 +8,28 @@
     <title>Ovie - Portfolio</title>
     <link rel="stylesheet" href="styles/out.css" type="text/css" />
     <script defer src="scripts/scroll_detection.js"></script>
+    <script defer src="scripts/scroll_to_sections.js"></script>
 </head>
 <body class="bg-gray-800" onscroll="onScroll()">
     <div class="title-bg">
         <div class="flex flex-row justify-center items-center gap-4 h-fit text-white pt-2 font-mono">
             <div class="flex_filler">
             </div>
-            <div class="flex_item">
-                games
-            </div>
-            <div class="flex_item">
+            <a id="games_link" class="flex_item cursor-pointer unselectable">
+                    games
+            </a>
+            <a id="art_link" class="flex_item">
                 art
-            </div>
-            <div class="flex_item">
+            </a>
+            <a id="music_link" class="flex_item">
                 music
-            </div>
-            <div class="flex_item">
+            </a>
+            <a id="about_link" class="flex_item">
                 about
-            </div>
-            <div class="flex_item">
+            </a>
+            <a id="contact_link" class="flex_item">
                 contact
-            </div>
+            </a>
             <div class="flex_filler">
             
             </div>
@@ -44,17 +45,31 @@
             </div>
         </div>
     </div>
-    <div class="flex h-fit items-center justify-center flex-col pt-5">
-        <h1 class="text-[16ch] md:text-[21ch]">
-            Hi! I'm Ovie
+    <div class="flex h-fit items-center justify-center flex-col pt-5 pb-5">
+        <h1 class="text-[14ch] md:text-[21ch]">
+            My games!
         </h1>
         <p class="text-center w-9/12 mb-5">
-            I'm a hobbyist artist, gamedev and certified chess anarchist (holy hell).
-            But anyway, this is my portfolio, if you want to see what I can do.
-            I do stuff in Blender, make games in Godot, draw/animate in Krita and make music in LMMS.
+            Here are my games, that I made for game jams. Some are <i>a bit harder</i> than another, so you'd need some true gamer skills
+            here. Consider yourself warned ;)
             <br/>
             <br/>
-            So, have a look! I'm sure you will find something interesting here.
+            So, have a look!
+            <br/>
+            <div class="flex gap-1 w-full mt-2 mb-2 flex-col lg:flex-row items-center" id="games">
+                <div class="flex-1"></div>
+                <div>
+                    <iframe class="rounded-md widget-shadow hidden md:block" frameborder="0" src="https://itch.io/embed/1816981?border_width=0&amp;bg_color=4d4c6a&amp;fg_color=ffffff&amp;border_color=ffffff" width="550" height="165"><a href="https://oviedev.itch.io/3punch">3Punch by OvieDev</a></iframe>
+                    <iframe class="rounded-md widget-shadow block md:hidden" frameborder="0" src="https://itch.io/embed/1816981?border_width=0&amp;bg_color=4d4c6a&amp;fg_color=ffffff&amp;border_color=ffffff" width="208" height="165"><a href="https://oviedev.itch.io/3punch">3Punch by OvieDev</a></iframe>
+                </div>
+                <div class="flex-1"></div>
+                <div>
+                    <iframe class="rounded-md widget-shadow hidden md:block" frameborder="0" src="https://itch.io/embed/2152647?border_width=0&amp;bg_color=4d4c6a&amp;fg_color=ffffff&amp;border_color=ffffff" width="550" height="165"><a href="https://oviedev.itch.io/the-space-problem">The Space Problem by OvieDev</a></iframe>
+                    <iframe class="rounded-md widget-shadow block md:hidden" frameborder="0" src="https://itch.io/embed/2152647?border_width=0&amp;bg_color=4d4c6a&amp;fg_color=ffffff&amp;border_color=ffffff" width="208" height="165"><a href="https://oviedev.itch.io/the-space-problem">The Space Problem by OvieDev</a></iframe>
+                </div>
+                <div class="flex-1"></div>
+
+            </div>
         </p>
     </div>
 </body>
