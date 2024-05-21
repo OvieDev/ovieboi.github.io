@@ -5,6 +5,7 @@
 :root {
     --shadow_color: rgb(43 58 72);
     --widget_shadow: rgb(49 70 84);
+    --widget_shadow2: rgb(32, 40, 45);
 }
 
 a {
@@ -83,6 +84,12 @@ p {
     }
 }
 
+.games_shadow {
+    -webkit-box-shadow: 0px 10px 52px 13px var(--widget_shadow2);
+    -moz-box-shadow: 0px 10px 52px 13px var(--widget_shadow2);
+    box-shadow: 0px 10px 52px 13px var(--widget_shadow2);
+}
+
 .animation_scrollop {
     animation-name: scroll_opacity;
     animation-timing-function: ease-in-out;
@@ -111,6 +118,16 @@ p {
     box-shadow: 0px 0px 44px 0px var(--widget_shadow);
 }
 
-#2d > img {
-    @apply rounded-md;
+.shadow2 {
+    @apply rounded-sm;
+    -webkit-box-shadow: 0px 0px 44px 0px var(--widget_shadow);
+    -moz-box-shadow: 0px 0px 44px 0px var(--widget_shadow);
+    box-shadow: 0px 0px 44px 0px var(--widget_shadow);
+}
+
+.shadow1 {
+    @apply rounded-sm;
+    -webkit-box-shadow: 0px 0px 44px 0px var(--widget_shadow2);
+    -moz-box-shadow: 0px 0px 44px 0px var(--widget_shadow2);
+    box-shadow: 0px 0px 44px 0px var(--widget_shadow2);
 }
