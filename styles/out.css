@@ -1449,6 +1449,10 @@ button {
     line-height: 1;
   }
 
+  .md\:text-\[18ch\] {
+    font-size: 18ch;
+  }
+
   .md\:text-\[21ch\] {
     font-size: 21ch;
   }
