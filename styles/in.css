@@ -142,5 +142,9 @@ h2 {
 
 #dividerline::before {
     content: "";
-    @apply w-9/12 block bg-gray-700 h-1 ml-auto mr-auto mb-10 rounded-md
+    @apply w-9/12 block bg-gray-700 h-1 ml-auto mr-auto mb-10 rounded-md;
+}
+
+button {
+    @apply rounded-md border-white text-4xl text-white border w-fit p-4 font-light;
 }
