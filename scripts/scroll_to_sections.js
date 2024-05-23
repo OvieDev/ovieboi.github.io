@@ -14,6 +14,10 @@ document.getElementById("about_link").addEventListener("click", function(){
     scroll_to("about");
 }, false);
 
+document.getElementById("contact_link").addEventListener("click", function(){
+    scroll_to("contact");
+}, false);
+
 function scroll_to(id) {
     console.log(id)
     const element = document.getElementById(id);

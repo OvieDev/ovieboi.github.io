@@ -148,3 +148,21 @@ h2 {
 button {
     @apply rounded-md border-white text-4xl text-white border w-fit p-4 font-light;
 }
+
+.button_hover {
+    rotate: 3deg;
+    transition: 0.5s all;
+}
+
+.button_hover:hover {
+    rotate: 0deg;
+}
+
+.button_hover2 {
+    rotate: -3deg;
+    transition: 0.5s all;
+}
+
+.button_hover2:hover {
+    rotate: 0deg;
+}

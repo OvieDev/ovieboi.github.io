@@ -28,7 +28,7 @@
             <a id="about_link" class="flex_item cursor-pointer unselectable">
                 about
             </a>
-            <a id="contact_link" class="flex_item">
+            <a id="contact_link" class="flex_item cursor-pointer unselectable">
                 contact
             </a>
             <div class="flex_filler">
@@ -74,7 +74,7 @@
         </p>
     </div>
     <div class="bg-secondary flex h-fit items-center justify-center flex-col pt-5 pb-5" id="art">
-        <h1 class="text-[14ch] md:text-[21ch]">2D artwork</h1>
+        <h1 class="text-[14ch] md:text-[21ch]">2D art</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ml-10 mr-10 items-center justify-items-center" id="2d">
             <img src="images/2d/lysc.gif" class="shadow1"/>
             <img src="images/2d/romantycznosc.gif" class="md:col-span-2 shadow1"/>
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="flex h-fit items-center justify-center flex-col pt-5 pb-5" id="3d">
-        <h1 class="text-[14ch] md:text-[21ch]">3D artwork</h1>
+        <h1 class="text-[14ch] md:text-[21ch]">3D art</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ml-10 mr-10 items-center justify-items-center" id="3d">
             <img src="images/3d/donuts.png" class="shadow2"/>
             <img src="images/thumbnail.png" class="md:col-span-2 size-11/12 shadow2"/>
@@ -94,7 +94,8 @@
             <img src="images/3d/crusader.png" class="shadow2"/>
         </div>
     </div>
-    <div class="bg-third">
+    <div class="bg-slate-700 h-0.5 w-9/12 ml-auto mr-auto mt-5 mb-5"></div>
+    <div class="bg-gradient-to-b from-[transparent] to-[#202831] pt-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 pt-5 pb-5" id="about">
         <h1 class="text-[14ch] md:text-[21ch]" id="whoami">Who am I?</h1>
         <div class="flex flex-col items-center gap-20 mt-10">
@@ -115,11 +116,15 @@
         </p>
     </div>
     </div>
-    <div class="flex flex-col md:flex-row-reverse items-center justify-center">
-        <h1 class="text-[14ch] md:text-[18ch]">Let's get in touch!</h1>
-        <div class="flex flex-col w-1/2 items-center justify-center gap-4">
-            <button id="email">E-mail: ovie.boi@gmail.com</button>
-            <button id="discord">Discord: _ovieboi</button>
+    <div class="bg-slate-700 h-0.5 w-full ml-auto mr-auto "></div>
+    <div class="flex flex-col md:flex-row-reverse items-center justify-center bg-third pb-10">
+        
+        <h1 class="text-[14ch] md:text-[16ch]" id="contact">Contact me!</h1>
+        <div class="flex flex-col w-1/2 items-center justify-center gap-20">
+            <button id="email" class="button_hover flex flex-row w-fit justify-center">
+                <img src="images/email.png" class="size-8"/>&nbsp;ovie.boi@gmail.com
+            </button>
+            <button id="discord" class="bg-blue-700 button_hover2"><img src="images/discord.png" class="size-10 float-left"/>&nbsp;ovieboi_</button>
         </div>
 
     </div>

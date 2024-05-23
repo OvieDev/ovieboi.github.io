@@ -11,7 +11,7 @@ function copyToClipboard(element, text, v) {
     console.log("run!")
     let e = document.getElementById(element)
     navigator.clipboard.writeText(text)
-    let text_inside = e.innerText
+    let text_inside = e.innerHTML
     e.innerText = "Copied"
     if (v)
     {
@@ -22,7 +22,7 @@ function copyToClipboard(element, text, v) {
     }
     
     setTimeout(function() {
-        e.innerText = text_inside
+        e.innerHTML = text_inside
         if (v)
             {
                 isEmailCopied = false
@@ -39,5 +39,5 @@ document.getElementById("email").addEventListener("click", function(){
 
 
 document.getElementById("discord").addEventListener("click", function(){
-    copyToClipboard("discord", "_ovieboi", false)
+    copyToClipboard("discord", "ovieboi_", false)
 }, false);
