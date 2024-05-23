@@ -34,7 +34,7 @@ function copyToClipboard(element, text, v) {
 }
 
 document.getElementById("email").addEventListener("click", function(){
-    copyToClipboard("email", "ovie.boi@gmail.com", true)
+    copyToClipboard("email", "stuff4ovie@gmail.com", true)
 }, false);
 
 
