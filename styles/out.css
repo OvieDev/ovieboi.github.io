@@ -1215,6 +1215,10 @@ video {
   font-size: 16ch;
 }
 
+.text-\[9ch\] {
+  font-size: 9ch;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
